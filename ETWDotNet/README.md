@@ -109,3 +109,7 @@ ETW consumers.
 1. Receiver/ Sender queue length
 2. ElapsedSincePrevPublisher
 3. ElapsedSinceMsgOriginator
+4. publisher counter
+5. receiver counter
+
++ AMT histogram log
