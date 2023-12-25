@@ -1,25 +1,35 @@
 # ETW
 
-
-tools:
-
-traceview (GUI)
-
-
-
-xperf 
+# Collect
+## xperf 
    write to file
-```
+```shell
 # prefix the provider name with *
-xperf -start trace -f trace1.etl -on *Microsoft-EtwDemo
+# start tracing
+# will write trace1.etl file
+xperf -start trace -f trace2.etl -on *Microsoft-EtwDemo
+
+# Stop tracing
+xperf -stop trace
 ```
 
-will write trace1.etl file
+## traceview
+trace with `*[providerName]`
 
-tracefmt write to console
-```
+
+# View Trace Data
+## tracefmt
+```shell
+#write to console
 tracefmt -displayonly trace1.etl
 ```
+## perfview
+load etl file
+
+## traceview
+load etl file
+
+
 ![image](https://github.com/yhan/ETW/assets/760399/d3cc4d45-5219-4c1c-b795-fd1ed943a4da)
 
 
